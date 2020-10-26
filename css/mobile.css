@@ -1,0 +1,188 @@
+/********* Header *********/
+
+header .container {
+  min-height: 50px;
+  padding: 0;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .logo {
+  width: 50%;
+  padding-left: 2em;
+}
+
+.container .menu {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  bottom: -183px;
+  z-index: 1;
+  background: #aaa;
+  height: 183px;
+}
+
+.container .menu ul {
+  padding-top: 0.65em;
+  padding-left: 1.1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .menu ul li {
+  margin: 8px;
+}
+
+.container .menu ul li a {
+  color: #ddd;
+  font-size: 0.875rem;
+}
+
+.container .menu ul li.active a {
+  font-weight: bold;
+}
+
+.container .list-icon {
+  width: 50%;
+  padding-right: 0.625em;
+}
+
+.container .list-icon .wrapper span.icon-3 {
+  display: block;
+  margin: 0 0.6rem;
+}
+
+/******** Slider **********/
+
+slide .container-slide .title {
+  top: 40%;
+  left: 10%;
+}
+
+.container-slide .title h1 {
+  font-size: 1.2em;
+  line-height: 25px;
+}
+
+/********** Best-Seller **********/
+
+.container-seller {
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.container-seller .item {
+  width: 40%;
+  margin-bottom: 0.5em;
+}
+
+.container-seller .item:first-child {
+  margin: 2em auto;
+}
+
+.container-seller .item:first-child {
+  width: 100%;
+  text-align: center;
+  padding: 0 4em 0 3em;
+}
+
+.container-seller .item:first-child p {
+  padding-top: 10px;
+}
+
+.container-seller .item span {
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+
+/********* Label-shopping *********/
+
+.container-label {
+  margin-top: 2.5em;
+  flex-wrap: wrap;
+  min-height: 300px;
+}
+
+.container-label .logo {
+  width: 50%;
+  padding: 30px;
+  border-bottom: 1px solid #fff;
+}
+
+.container-label .logo small {
+  width: 3em;
+}
+
+/********* Sale-Ads *********/
+
+.container-sale {
+  flex-direction: column;
+  height: 800px;
+}
+
+.container-sale div {
+  height: 200px;
+}
+
+.container-sale div img {
+  padding: 30px 40px;
+}
+
+/********** Feature - Product **********/
+
+.content-product {
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 10px;
+  padding: 0;
+}
+
+.content-product .item img {
+  width: 80%;
+  margin-left: 1.5em;
+}
+
+.content-product .item span {
+  font-size: 0.7em;
+  margin-left: 2.2em;
+  line-height: 18px;
+}
+
+/********* Search - Trademark *********/
+
+.container-trademark {
+  margin-top: 3.2em;
+  grid-template-columns: 50% 50%;
+}
+
+.container-trademark .search {
+  width: 100%;
+  grid-column: 1/3;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container-trademark .logo {
+  width: 100%;
+  grid-column: 1/3;
+}
+
+.search input {
+  min-height: 30px;
+}
+
+.container-trademark > .logo img {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 30%;
+}
+
+.container-footer {
+  flex-wrap: wrap;
+  min-height: 85px;
+}
+
+.card .card-1 {
+  margin-top: 0.2em;
+}
