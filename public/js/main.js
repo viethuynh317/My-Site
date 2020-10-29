@@ -100,7 +100,7 @@ $(() => {$('.owl-carousel').owlCarousel({
   items: 1
 });
 
-$('.container-seller .item').click(() => {
+$('.container-seller .item, .content-product .item').click(() => {
   
   $('.modal').css('display', 'block');
   document.body.style.overflow = 'hidden';
