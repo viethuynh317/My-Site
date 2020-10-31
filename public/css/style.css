@@ -33,7 +33,7 @@ header .container {
 
 .container .menu ul li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 15px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
@@ -128,26 +128,40 @@ slide .container-slide .title {
 .owl-theme .owl-nav [class*="owl-"] {
   outline: none !important;
   margin: 0 !important;
+  background: rgba(200, 200, 200, 0.8) !important;
+}
+
+.owl-theme .owl-nav:hover [class*="owl-"] {
+  outline: none !important;
+  margin: 0 !important;
 }
 
 .owl-nav .owl-prev .owl-nav-prev {
   position: absolute;
-  top: 40%;
+  top: 39%;
   left: 3%;
-  padding: 0.5rem 1rem !important;
+  padding: 0.6rem 1.2rem !important;
   border-radius: 50% !important;
-  font-size: 1.2rem !important;
+  font-size: 1.5rem !important;
   text-align: center !important;
 }
 
 .owl-nav .owl-next .owl-nav-next {
   position: absolute;
-  top: 40%;
+  top: 39%;
   right: 3%;
-  padding: 0.5rem 1rem !important;
+  padding: 0.6rem 1.2rem !important;
   border-radius: 50% !important;
-  font-size: 1.2rem !important;
+  font-size: 1.5rem !important;
   text-align: center !important;
+}
+
+.owl-nav .owl-next .owl-nav-next:hover {
+  background: rgba(100, 100, 100, 0.8) !important;
+}
+
+.owl-nav .owl-prev .owl-nav-prev:hover {
+  background: rgba(100, 100, 100, 0.8) !important;
 }
 
 .owl-theme .owl-dots {
@@ -175,6 +189,12 @@ slide .container-slide .title {
   margin-top: -2rem !important;
   outline: none !important;
   border: none !important;
+}
+
+.owl-theme .owl-dots {
+  position: absolute;
+  bottom: 5%;
+  left: 41.5% !important;
 }
 /*********** Best - Seller ************/
 
@@ -412,9 +432,9 @@ slide .container-slide .title {
 }
 
 .search p {
-  font-size: 10px;
+  font-size: 12px;
   color: #eee;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   line-height: 15px;
   padding: 8px 0 18px;
@@ -428,19 +448,22 @@ slide .container-slide .title {
 }
 
 .search input[type="text"] {
-  width: 39%;
+  width: 50%;
+  font-size: 12px;
   padding-left: 15px;
+  height: 35px;
 }
 
 .search input[type="button"] {
-  width: 18%;
+  width: 8rem;
   text-transform: uppercase;
-  font-size: 9px;
+  font-size: 11px;
   background: #3cb878;
-  padding-top: 1px;
   cursor: pointer;
   transition: all 0.3s;
   color: #eee;
+  text-align: center;
+  height: 35px;
 }
 .search input[type="button"]:hover {
   background: #12d872;
@@ -587,3 +610,66 @@ slide .container-slide .title {
   border: 3px solid rgb(241, 179, 64);
 }
 /* --------------- Create Modal Item ---------------*/
+
+@media screen and (max-width: 992px) {
+  header .container {
+    min-height: 50px;
+    padding: 0;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container .logo {
+    width: 50%;
+  }
+
+  .container .menu {
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    bottom: -183px;
+    z-index: 999;
+    background: #aaa;
+    height: 185px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .container .menu ul {
+    padding-left: 1.1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .menu ul li {
+    margin: 0;
+    padding: 0.6rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .container .menu ul li:last-child {
+    border: none;
+  }
+
+  .container .menu ul li a {
+    color: #ddd;
+    font-size: 0.875rem;
+  }
+
+  .container .menu ul li.active a {
+    font-weight: bold;
+  }
+
+  .container .list-icon {
+    width: 50%;
+    padding-right: 0.625em;
+  }
+
+  .container .list-icon .wrapper span.icon-3 {
+    display: block;
+    margin: 0 0.6rem;
+  }
+}

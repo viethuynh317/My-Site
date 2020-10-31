@@ -79,12 +79,12 @@ function onModalPrevClick(){
 
 
 function onMenuClick(e) {
-  const hiddenMenu = menuList.style.opacity;
-  if (hiddenMenu === '1') {
-    menuList.style.opacity = '0'
+  const hiddenMenu = menuList.style.visibility;
+  if (hiddenMenu === 'visible') {
+    menuList.style.visibility = 'hidden'
     return false;
   }
-  menuList.style.opacity = '1';
+  menuList.style.visibility = 'visible';
 }
 
 
