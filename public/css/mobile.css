@@ -180,6 +180,8 @@ slide .container-slide .title {
 
 .search input[type="button"] {
   width: 30% !important;
+  font-size: 10px !important;
+  padding-top: 12.5px !important;
 }
 
 .container-trademark .logo {
