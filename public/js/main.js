@@ -2,6 +2,9 @@
 const menuList = document.getElementById('menu');
 const menuButton = document.getElementById('hambuger');
 
+const email = document.getElementById('email');
+
+const menuIcon = document.querySelector('.icon-3');
 const modalPrevBtn = document.querySelector('.icon-prev');
 const modalNextBtn = document.querySelector('.icon-next');
 const thumbArray = document.querySelectorAll('.thumb-item');
@@ -88,7 +91,27 @@ function onMenuClick(e) {
 }
 
 
+window.addEventListener('resize', e => {
+  document.body.clientWidth > 976 ?
+    menuList.style.visibility = 'visible' : 
+    menuList.style.visibility = 'hidden';
+  
+});
+
+document.addEventListener('click', e => {
+  if(menuIcon !== e.target && document.body.clientWidth < 976){
+    menuList.style.visibility = 'hidden';
+  }
+});
+
+
+email.addEventListener('keyup', (e) => {
+  sessionStorage.setItem('email', e.target.value);
+});
+sessionStorage.getItem('email') ? email.setAttribute('value', sessionStorage.getItem('email')) : email.setAttribute('value', '');
+
 // -------------- Vanilla JavaScript --------------
+
 // ------------jQuery-------------
 $(() => {$('.owl-carousel').owlCarousel({
   loop:true,
@@ -126,7 +149,5 @@ $('.wrap-modal').click(() => {
   });
 });
 });
-
-
 
 

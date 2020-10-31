@@ -167,7 +167,7 @@ slide .container-slide .title {
 .owl-theme .owl-dots {
   position: absolute;
   bottom: 5%;
-  left: 45%;
+  left: 42% !important;
 }
 
 .owl-theme .owl-dots .owl-dot {
@@ -191,11 +191,6 @@ slide .container-slide .title {
   border: none !important;
 }
 
-.owl-theme .owl-dots {
-  position: absolute;
-  bottom: 5%;
-  left: 41.5% !important;
-}
 /*********** Best - Seller ************/
 
 .container-seller {
@@ -447,7 +442,7 @@ slide .container-slide .title {
   font-size: 10px;
 }
 
-.search input[type="text"] {
+.search input[type="email"] {
   width: 50%;
   font-size: 12px;
   padding-left: 15px;
@@ -458,7 +453,7 @@ slide .container-slide .title {
   width: 8rem;
   text-transform: uppercase;
   font-size: 11px;
-  background: #3cb878;
+  background: #26a061;
   cursor: pointer;
   transition: all 0.3s;
   color: #eee;
@@ -466,7 +461,7 @@ slide .container-slide .title {
   height: 35px;
 }
 .search input[type="button"]:hover {
-  background: #12d872;
+  background: #07e774;
 }
 
 .container-trademark > .logo {
@@ -572,8 +567,16 @@ slide .container-slide .title {
   top: 40%;
   left: 3%;
   padding: 1rem 0.1rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+.icon-prev:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.icon-next:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .icon-next {
@@ -581,18 +584,24 @@ slide .container-slide .title {
   top: 40%;
   right: 3%;
   padding: 1rem 0.1rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
 .sidebar-item {
   padding-top: 2rem;
+  padding-right: 1rem;
+}
+
+.sidebar-item p {
+  text-align: center;
 }
 
 .thumbnail {
   margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .thumb-item {
