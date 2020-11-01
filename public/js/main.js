@@ -9,6 +9,7 @@ const modalPrevBtn = document.querySelector('.icon-prev');
 const modalNextBtn = document.querySelector('.icon-next');
 const thumbArray = document.querySelectorAll('.thumb-item');
 const mainImg = document.querySelector('.main-img img');
+const navBar = document.querySelector('header .container');
 
 let currentItem = document.querySelector('.active');
 
@@ -90,7 +91,7 @@ function onMenuClick(e) {
   menuList.style.visibility = 'visible';
 }
 
-
+// Hidden menu when click ouside 
 window.addEventListener('resize', e => {
   document.body.clientWidth > 976 ?
     menuList.style.visibility = 'visible' : 
@@ -104,11 +105,14 @@ document.addEventListener('click', e => {
   }
 });
 
+// Save temp mail
 
 email.addEventListener('keyup', (e) => {
   sessionStorage.setItem('email', e.target.value);
 });
 sessionStorage.getItem('email') ? email.setAttribute('value', sessionStorage.getItem('email')) : email.setAttribute('value', '');
+
+
 
 // -------------- Vanilla JavaScript --------------
 
@@ -150,4 +154,12 @@ $('.wrap-modal').click(() => {
 });
 });
 
+$(window).scroll(() => {
+
+  let heightTop = window.scrollY;
+  heightTop > 70 ?
+   navBar.classList.add('container-fixed') : 
+   navBar.classList.remove('container-fixed'); 
+
+})
 

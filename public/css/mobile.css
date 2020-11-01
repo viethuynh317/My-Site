@@ -67,14 +67,23 @@ slide .container-slide .title {
   width: 25%;
 }
 
-.container-footer {
-  flex-wrap: wrap;
-  min-height: 85px;
+.container-label .logo {
+  padding: 5% !important;
 }
 
-.card .card-1 {
-  margin-top: 0.2em;
+.container-sale {
+  flex-direction: column;
+  height: 900px;
 }
+
+.container-sale div {
+  height: 200px;
+}
+
+.container-sale div img {
+  padding: 30px 50px !important;
+}
+
 /*---------- Carousel nav-dots ----------- */
 .owl-nav .owl-prev .owl-nav-prev {
   padding: 0.5rem 1rem !important;
