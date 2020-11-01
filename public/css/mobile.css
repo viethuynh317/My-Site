@@ -1,5 +1,9 @@
 /******** Slider **********/
 
+.container .menu ul li a {
+  padding-left: 5%;
+}
+
 slide .container-slide .title {
   top: 40% !important;
   left: 14% !important;

@@ -12,7 +12,6 @@ header .container {
 .container .menu {
   visibility: hidden;
   position: absolute;
-  width: 100vw;
   bottom: -183px;
   z-index: 999;
   background: #aaa;
@@ -21,14 +20,13 @@ header .container {
 }
 
 .container .menu ul {
-  padding-left: 1.1em;
   display: flex;
   flex-direction: column;
 }
 
 .container .menu ul li {
   margin: 0;
-  padding: 0.6rem;
+
   border-bottom: 1px solid #ddd;
 }
 
