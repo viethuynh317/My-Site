@@ -167,7 +167,7 @@ slide .container-slide .title {
 .owl-theme .owl-dots {
   position: absolute;
   bottom: 5%;
-  left: 42% !important;
+  left: 39.5% !important;
 }
 
 .owl-theme .owl-dots .owl-dot {
@@ -195,29 +195,28 @@ slide .container-slide .title {
 
 .container-seller {
   display: flex;
-  max-width: 100%;
+  max-width: 98%;
   margin-top: 60px;
   justify-content: center;
+  margin: auto;
 }
 
 .container-seller .item {
-  width: 17%;
+  width: 18.75%;
   position: relative;
-  margin: 0 1em;
+  margin: 0 0.5em;
 }
 
 .container-seller .item img {
   width: 100%;
   padding-bottom: 5px;
 }
-.container-seller .item:first-child {
-  padding-top: 8%;
-}
+
 .container-seller .item:first-child h2 {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 19px;
   word-spacing: 4px;
   color: #333333;
   padding-bottom: 5px;
@@ -237,7 +236,7 @@ slide .container-slide .title {
   color: #6e6e6e;
   font-weight: 600;
   line-height: 17px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .container-seller .item span {
@@ -381,7 +380,7 @@ slide .container-slide .title {
   grid-template-columns: repeat(5, 1fr);
   grid-row-gap: 40px;
   justify-content: center;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 .content-product .item img {
@@ -489,6 +488,7 @@ slide .container-slide .title {
   color: #999;
   font-size: 11px;
   margin-top: 19px;
+  text-align: center;
 }
 
 .card .card-1 {

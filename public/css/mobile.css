@@ -12,6 +12,10 @@ slide .container-slide .title {
 
 /********** Feature - Product **********/
 
+.content-product {
+  grid-column-gap: 1rem;
+}
+
 .content-product .item {
   margin: 0;
 }
@@ -41,7 +45,7 @@ slide .container-slide .title {
 }
 
 .search input[type="button"] {
-  width: 30% !important;
+  width: 35% !important;
   font-size: 10px !important;
   padding-top: 12.5px !important;
 }
@@ -56,9 +60,7 @@ slide .container-slide .title {
 }
 
 .container-trademark > .logo img {
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 30%;
+  width: 25%;
 }
 
 .container-footer {
@@ -81,7 +83,7 @@ slide .container-slide .title {
 }
 
 .owl-theme .owl-dots {
-  left: 29% !important;
+  left: 28.5% !important;
 }
 
 .owl-theme .owl-dots .owl-dot span {
