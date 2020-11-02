@@ -2,7 +2,7 @@
 
 header .container {
   min-height: 50px;
-  padding: 0;
+
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
@@ -28,6 +28,7 @@ header .container {
   margin: 0;
 
   border-bottom: 1px solid #ddd;
+  padding-left: 1.3rem;
 }
 
 .container .menu ul li:last-child {
@@ -45,7 +46,6 @@ header .container {
 
 .container .list-icon {
   width: 50%;
-  padding-right: 0.625em;
 }
 
 .container .list-icon .wrapper span.icon-3 {

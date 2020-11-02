@@ -1,7 +1,19 @@
 /******** Slider **********/
 
-.container .menu ul li a {
-  padding-left: 5%;
+header .container {
+  padding: 0;
+}
+
+header .container-fixed {
+  padding: 0 1.3rem !important;
+}
+
+.container .menu ul li {
+  padding-left: 0.3rem !important;
+}
+
+.container.container-fixed .menu ul li {
+  padding-left: 1.6rem !important;
 }
 
 slide .container-slide .title {

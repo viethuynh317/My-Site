@@ -13,6 +13,8 @@ const navBar = document.querySelector('header .container');
 
 let currentItem = document.querySelector('.active');
 
+let heightTop = 0;
+
 menuButton.addEventListener('click', onMenuClick);
 modalNextBtn.addEventListener('click', onModalNextClick);
 modalPrevBtn.addEventListener('click', onModalPrevClick);
@@ -26,6 +28,7 @@ const length = thumbArray.length;
 thumbArray.forEach(thumb => {
   
   thumb.addEventListener('click', () => {
+    
    currentItem = thumb;
     count = Array.prototype.slice.call(thumbArray).indexOf(currentItem);
     currentItem.classList.add('active');
@@ -93,7 +96,7 @@ function onMenuClick(e) {
 
 // Hidden menu when click ouside 
 window.addEventListener('resize', e => {
-  document.body.clientWidth > 976 ?
+  document.body.clientWidth >= 976 ?
     menuList.style.visibility = 'visible' : 
     menuList.style.visibility = 'hidden';
   
@@ -130,6 +133,7 @@ $(() => {$('.owl-carousel').owlCarousel({
 $('.container-seller .item, .content-product .item').click(() => {
   
   $('.modal').css('display', 'block');
+  navBar.classList.remove('container-fixed'); 
   document.body.style.overflow = 'hidden';
 });
 
@@ -141,6 +145,8 @@ $('.container-seller .item:first-child()').click(() => {
 $('.wrap-modal').click(() => {
   $('.modal').css('display', 'none');
   document.body.style.overflow = 'auto';
+  if(heightTop > 68) 
+    navBar.classList.add('container-fixed');
   let temp = 0;
   thumbArray.forEach((thumb) => {
     if(!temp){
@@ -156,8 +162,9 @@ $('.wrap-modal').click(() => {
 
 $(window).scroll(() => {
 
-  let heightTop = window.scrollY;
-  heightTop > 70 ?
+
+  heightTop = window.scrollY;
+  heightTop > 67 ?
    navBar.classList.add('container-fixed') : 
    navBar.classList.remove('container-fixed'); 
 
