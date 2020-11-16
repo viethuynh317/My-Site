@@ -31,9 +31,6 @@ header .container {
   background: rgba(255, 255, 255, 0.9) !important;
 }
 
-.container.container-fixed .menu ul li {
-  padding-left: 3.5rem;
-}
 .container .logo {
   text-transform: uppercase;
   width: 30%;
@@ -651,6 +648,10 @@ slide .container-slide .title {
 
   header .container-fixed {
     padding: 0 3rem;
+  }
+
+  .container.container-fixed .menu ul li {
+    padding-left: 3.5rem;
   }
 
   .container .logo {
